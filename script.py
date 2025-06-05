@@ -1,4 +1,5 @@
 import ffmpeg
+import ffmprobe # TODO do I need this?
 
 
 """
@@ -25,3 +26,30 @@ Based on preference of audio and subtitle the script should change all the setti
         
 
 """
+
+# TODO focus on just succesfully seeting up default language for one video for the time being.
+
+
+def get_video_metadat(file_path):
+    """ Gather video file data
+
+    Args:
+        file_path (Strinng): inputed video file path
+    """
+    
+    # TODO implementation 
+    
+
+def set_default_track(audio, subtitle):
+    
+    """ Change Track's "default track flag" to 1 if "Language" matches audio  and 
+        subtitle prefrencees. All other track that are not protected or needed 
+        will set "default track flag" to 0.
+    
+    #TODO may change to custom class instead of string to hold all appropriate info
+    Args:
+        audio (String): prefered default audio track 
+        subtitle (String): prefered default audio track
+        
+    """
+    # TODO implementation 
